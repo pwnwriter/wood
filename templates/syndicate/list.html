@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>
+  Syndicate
+</h1>
+
+<h2 class="subtitle">{{ terms | length }} syndications in total.</h2>
+
+{% for tag in terms %}
+<h2><a href="{{ get_taxonomy_url(kind='syndicate', name=tag.name) }}"><b>{{tag.name}} <sup>{{ tag.pages | length }}</sup></b></a></h2>
+{% endfor %}
+
+{% endblock content %}
+

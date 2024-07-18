@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@font-face {
+    font-family: 'OpenDyslexicAltaRegular';
+    src: url('/assets/fonts/OpenDyslexicAlta-Regular.ttf') format('truetype');
+}
+
+:root[data-theme] {
+    --background-color: var(--background-color-0);
+    --color-comments: var(--color);
+}
+
+:root[data-theme="gruvbox-light"] {
+    --background-image: #fbf1c7;
+    --background-color-0: #fbf1c7;
+    --background-color-1: #ebdbb2;
+    --color: #3c3836;
+    --color-comments: #928374;
+    --text-highlight-0: #9d0006;
+    --text-highlight-1: #076678; /* should be a blue */
+    --text-highlight-2: #8f3f71; /* should be a purple */
+    --text-highlight-3: #427b58;
+    --text-highlight-4: #b57614;
+    --text-highlight-5: #79740e;
+    --logo-mode: url('/res/colors/logo-gruvbox-light.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="gruvbox-dark"] {
+    --background-image: #282828;
+    --background-color-0: #282828;
+    --background-color-1: #504945;
+    --color: #ebdbb2;
+    --color-comments: #a8a8a8;
+    --text-highlight-0: #fb4934;
+    --text-highlight-1: #83a598;
+    --text-highlight-2: #d3869b;
+    --text-highlight-3: #8ec07c;
+    --text-highlight-4: #fabd2f;
+    --text-highlight-5: #b8bb26;
+    --logo-mode: url('/res/colors/logo-gruvbox-dark.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="night-solis"] {
+    --background-image: #161512;
+    --background-color-0: #161512;
+    --background-color-1: #312f2b;
+    --color: #ebebea;
+    --color-comments: #c9c8c5;
+    --text-highlight-0: #d71010;
+    --text-highlight-1: #38a78c;
+    --text-highlight-2: #ed851c;
+    --text-highlight-3: #19c434;
+    --text-highlight-4: #f8cb2b;
+    --text-highlight-5: #e6994a;
+    --logo-mode: url('/res/colors/logo-night-solis.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="night-spaceduck"] {
+    --background-image: #0f111b;
+    --background-color-0: #0f111b;
+    --background-color-1: #1b1c36;
+    --color: #ecf0c1;
+    --color-comments: #818596;
+    --text-highlight-0: #b3a1e6;
+    --text-highlight-1: #5ccc96;
+    --text-highlight-2: #7a5ccc;
+    --text-highlight-3: #ce6f8f;
+    --text-highlight-4: #f2ce00;
+    --text-highlight-5: #00a3cc;
+    --logo-mode: url('/res/colors/logo-night-spaceduck.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="nord-dark"] {
+    --background-image: #2e3440;
+    --background-color-0: #2e3440;
+    --background-color-1: #3b4252;
+    --color: #eceff4;
+    --color-comments: #eceff4aa;
+    --text-highlight-0: #8fbcbb;
+    --text-highlight-1: #81a1c1;
+    --text-highlight-2: #5e81ac;
+    --text-highlight-3: #88c0d0;
+    --text-highlight-4: #ebcb8b;
+    --text-highlight-5: #a3be8c;
+    --logo-mode: url('/res/colors/logo-nord.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="nord-light"] {
+    --background-image: #ffffff;
+    --background-color-0: #ffffff;
+    --background-color-1: #eceff4;
+    --color: #2e3440;
+    --color-comments: #2e344088;
+    --text-highlight-0: #8fbcbb;
+    --text-highlight-1: #81a1c1;
+    --text-highlight-2: #5e81ac;
+    --text-highlight-3: #88c0d0;
+    --text-highlight-4: #ebcb8b;
+    --text-highlight-5: #a3be8c;
+    --logo-mode: url('/res/colors/logo-nord.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="everforest-light"] {
+    --background-image: #fdf6e3;
+    --background-color-0: #fdf6e3;
+    --background-color-1: #efebd4;
+    --color: #5c6a72;
+    --color-comments: #a6b0a0;
+    --text-highlight-0: #8da101;
+    --text-highlight-1: #3a94c5;
+    --text-highlight-2: #df69ba;
+    --text-highlight-3: #f85552;
+    --text-highlight-4: #dfa000;
+    --text-highlight-5: #35a77c;
+    --logo-mode: url('/res/colors/logo-everforest-light.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="everforest-dark"] {
+    --background-image: #2d353b;
+    --background-color-0: #2d353b;
+    --background-color-1: #232a2e;
+    --color: #d3c6aa;
+    --color-comments: #859289;
+    --text-highlight-0: #a7c080;
+    --text-highlight-1: #7fbbb3;
+    --text-highlight-2: #d699b6;
+    --text-highlight-3: #e67e80;
+    --text-highlight-4: #dbbc7f;
+    --text-highlight-5: #83c092;
+    --logo-mode: url('/res/colors/logo-everforest-dark.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="night-gotham"] {
+    --background-image: #0c1014;
+    --background-color-0: #0c1014;
+    --background-color-1: #091f2e;
+    --color: #d3ebe9;
+    --color-comments: #599cab;
+    --text-highlight-0: #d26937;
+    --text-highlight-1: #599cab;
+    --text-highlight-2: #888ca6;
+    --text-highlight-3: #99d1ce;
+    --text-highlight-4: #edb443;
+    --text-highlight-5: #2aa889;
+    --logo-mode: url('/res/colors/logo-night-gotham.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="one-dark"] {
+    --background-image: hsl(220, 13%, 18%);
+    --background-color-0: hsl(220, 13%, 18%);
+    --background-color-1: hsl(230, 13%, 13%);
+    --color: hsl(220, 14%, 71%);
+    --color-comments: hsl(220, 10%, 40%);
+    --text-highlight-0: hsl(355, 65%, 65%);
+    --text-highlight-1: hsl(207, 82%, 66%);
+    --text-highlight-2: hsl(286, 60%, 67%);
+    --text-highlight-3: hsl(207, 82%, 66%);
+    --text-highlight-4: hsl(39, 67%, 69%);
+    --text-highlight-5: hsl(95, 38%, 62%);
+    --logo-mode: url('/res/colors/logo-one-dark.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="one-light"] {
+    --background-image: hsl(230, 1%, 98%);
+    --background-color-0: hsl(230, 1%, 98%);
+    --background-color-1: hsl(20, 13%, 93%);
+    --color: hsl(230, 8%, 24%);
+    --color-comments: hsl(230, 4%, 64%);
+    --text-highlight-0: hsl(5, 74%, 59%);
+    --text-highlight-1: hsl(221, 87%, 60%);
+    --text-highlight-2: hsl(301, 63%, 40%);
+    --text-highlight-3: hsl(198, 99%, 37%);
+    --text-highlight-4: hsl(35, 99%, 40%);
+    --text-highlight-5: hsl(119, 34%, 47%);
+    --logo-mode: url('/res/colors/logo-one-light.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="tokyo-night"] {
+    --background-image: #1a1b26;
+    --background-color-0: #1a1b26;
+    --background-color-1: #24283b;
+    --color: #a9b1d6;
+    --color-comments: #565f89;
+    --text-highlight-0: #f7768e;
+    --text-highlight-1: #7dcfff;
+    --text-highlight-2: #bb9af7;
+    --text-highlight-3: #7aa2f7;
+    --text-highlight-4: #e0af68;
+    --text-highlight-5: #9ece6a;
+    --logo-mode: url('/res/colors/logo-tokio-night.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="tokyo-night-light"] {
+    --background-image: #f3f3f5;
+    --background-color-0: #f3f3f5;
+    --background-color-1: #d5d6db;
+    --color: #343b58;
+    --color-comments: #9699a3;
+    --text-highlight-0: #8c4351;
+    --text-highlight-1: #0f4b6e;
+    --text-highlight-2: #5a4a78;
+    --text-highlight-3: #34548a;
+    --text-highlight-4: #8f5e15;
+    --text-highlight-5: #485e30;
+    --logo-mode: url('/res/colors/logo-tokio-night-light.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="catppuccin-latte"] {
+    --background-image: #eff1f5;
+    --background-color-0: #eff1f5;
+    --background-color-1: #e6e9ef;
+    --color: #4c4f69;
+    --color-comments: #8c8fa1;
+    --text-highlight-0: #7287fd;
+    --text-highlight-1: #1e66f5;
+    --text-highlight-2: #8839ef;
+    --text-highlight-3: #179299;
+    --text-highlight-4: #df8e1d;
+    --text-highlight-5: #40a02b;
+    --logo-mode: url('/res/colors/logo-catppuccin-latte.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="catppuccin-frappe"] {
+    --background-image: #303446;
+    --background-color-0: #303446;
+    --background-color-1: #292c3c;
+    --color: #c6d0f5;
+    --color-comments: #737994;
+    --text-highlight-0: #babbf1;
+    --text-highlight-1: #8caaee;
+    --text-highlight-2: #ca9ee6;
+    --text-highlight-3: #81c8be;
+    --text-highlight-4: #e5c890;
+    --text-highlight-5: #a6d189;
+    --logo-mode: url('/res/colors/logo-catppuccin-frappe.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="catppuccin-macchiato"] {
+    --background-image: #24273a;
+    --background-color-0: #24273a;
+    --background-color-1: #1e2030;
+    --color: #cad3f5;
+    --color-comments: #6e738d;
+    --text-highlight-0: #b7bdf8;
+    --text-highlight-1: #8aadf4;
+    --text-highlight-2: #c6a0f6;
+    --text-highlight-3: #8bd5ca;
+    --text-highlight-4: #eed49f;
+    --text-highlight-5: #a6da95;
+    --logo-mode: url('/res/colors/logo-catppuccin-macchiato.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="catppuccin-mocha"] {
+    --background-image: #1e1e2e;
+    --background-color-0: #1e1e2e;
+    --background-color-1: #181825;
+    --color: #cdd6f4;
+    --color-comments: #6c7086;
+    --text-highlight-0: #b4befe;
+    --text-highlight-1: #89b4fa;
+    --text-highlight-2: #cba6f7;
+    --text-highlight-3: #94e2d5;
+    --text-highlight-4: #f9e2af;
+    --text-highlight-5: #a6e3a1;
+    --logo-mode: url('/res/colors/logo-catppuccin-mocha.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="night-dracula"] {
+    --background-image: #282a36;
+    --background-color-0: #282a36;
+    --background-color-1: #44475a;
+    --color: #f8f8f2;
+    --color-comments: #6272a4;
+    --text-highlight-0: #ff79c6;
+    --text-highlight-1: #8be9fd;
+    --text-highlight-2: #bd93f9;
+    --text-highlight-3: #50fa7b;
+    --text-highlight-4: #ffb86c;
+    --text-highlight-5: #f1fa8c;
+    --logo-mode: url('/res/colors/logo-dracula.svg');
+    --font-family-swap: Latin Modern;
+}
+
+:root[data-theme="genre-poetic"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='2000' preserveAspectRatio='none' viewBox='0 0 2000 2000'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1009%26quot%3b)' fill='none'%3e%3crect width='2000' height='2000' x='0' y='0' fill='rgba(253%2c 246%2c 227%2c 1)'%3e%3c/rect%3e%3ccircle r='333.335' cx='-34.96' cy='-62.92' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='355.51' cx='1713.43' cy='1953.17' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='228.245' cx='165.15' cy='904.27' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='606.24' cx='749.21' cy='1281.51' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='347.885' cx='102.85' cy='1357.65' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='245.31' cx='627.7' cy='487.78' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='440.805' cx='1829.49' cy='1829.62' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='252.165' cx='720.38' cy='903.72' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='385.115' cx='1169.75' cy='1258.67' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='486.94' cx='1274.64' cy='203.28' stroke='%23efebd4' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1009'%3e%3crect width='2000' height='2000' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #fdf6e3;
+    --background-color-1: #efebd4;
+    --color: #5c6a72;
+    --color-comments: #a6b0a0;
+    --text-highlight-0: #8da101;
+    --text-highlight-1: #3a94c5;
+    --text-highlight-2: #df69ba;
+    --text-highlight-3: #f85552;
+    --text-highlight-4: #dfa000;
+    --text-highlight-5: #35a77c;
+    --logo-mode: url('/res/colors/logo-everforest-light.svg');
+    --font-family-swap: 'Nova Mono', monospace;
+}
+
+:root[data-theme="genre-poetic-dark"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='4000' height='4000' preserveAspectRatio='none' viewBox='0 0 4000 4000'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1018%26quot%3b)' fill='none'%3e%3crect width='4000' height='4000' x='0' y='0' fill='rgba(45%2c 53%2c 59%2c 1)'%3e%3c/rect%3e%3ccircle r='666.665' cx='-364.72' cy='494.01' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='923.825' cx='404.7' cy='1621.77' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='427.24' cx='808.25' cy='1219.64' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='1105.805' cx='2646.21' cy='3177.59' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='433.44' cx='385.98' cy='151.78' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='510.18' cx='1260.98' cy='876.35' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='864.905' cx='2621.64' cy='331.41' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='469.94' cx='625.75' cy='1672.89' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='495.61' cx='1230.16' cy='3029.7' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='1184.785' cx='3222.47' cy='2123.77' stroke='%23232a2e' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1018'%3e%3crect width='4000' height='4000' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #2d353b;
+    --background-color-1: #232a2e;
+    --color: #d3c6aa;
+    --color-comments: #859289;
+    --text-highlight-0: #a7c080;
+    --text-highlight-1: #7fbbb3;
+    --text-highlight-2: #d699b6;
+    --text-highlight-3: #e67e80;
+    --text-highlight-4: #dbbc7f;
+    --text-highlight-5: #83c092;
+    --logo-mode: url('/res/colors/logo-everforest-dark.svg');
+    --font-family-swap: 'Nova Mono', monospace;
+}
+
+
+:root[data-theme="genre-storific"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='2000' preserveAspectRatio='none' viewBox='0 0 2000 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1048%26quot%3b)' fill='none'%3e%3crect width='2000' height='2000' x='0' y='0' fill='rgba(243%2c 243%2c 245%2c 1)'%3e%3c/rect%3e%3cpath d='M6.83 -107.52L119.42 -42.52L119.42 87.48L6.83 152.48L-105.76 87.48L-105.76 -42.52zM6.83 1452.48L119.42 1517.48L119.42 1647.48L6.83 1712.48L-105.76 1647.48L-105.76 1517.48zM6.83 1842.48L119.42 1907.48L119.42 2037.48L6.83 2102.48L-105.76 2037.48L-105.76 1907.48zM344.59 87.48L457.18 152.48L457.18 282.48L344.59 347.48L232 282.48L232 152.48zM344.59 477.48L457.18 542.48L457.18 672.48L344.59 737.48L232 672.48L232 542.48zM344.59 867.48L457.18 932.48L457.18 1062.48L344.59 1127.48L232 1062.48L232 932.48zM232 1452.48L344.59 1517.48L344.59 1647.48L232 1712.48L119.42 1647.48L119.42 1517.48zM457.18 672.48L569.76 737.48L569.76 867.48L457.18 932.48L344.59 867.48L344.59 737.48zM569.76 1257.48L682.35 1322.48L682.35 1452.48L569.76 1517.48L457.18 1452.48L457.18 1322.48zM457.18 1452.48L569.76 1517.48L569.76 1647.48L457.18 1712.48L344.59 1647.48L344.59 1517.48zM682.35 -107.52L794.94 -42.52L794.94 87.48L682.35 152.48L569.76 87.48L569.76 -42.52zM794.94 1257.48L907.52 1322.48L907.52 1452.48L794.94 1517.48L682.35 1452.48L682.35 1322.48zM907.52 -107.52L1020.11 -42.52L1020.11 87.48L907.52 152.48L794.94 87.48L794.94 -42.52zM907.52 282.48L1020.11 347.48L1020.11 477.48L907.52 542.48L794.94 477.48L794.94 347.48zM907.52 672.48L1020.11 737.48L1020.11 867.48L907.52 932.48L794.94 867.48L794.94 737.48zM1245.28 1647.48L1357.87 1712.48L1357.87 1842.48L1245.28 1907.48L1132.69 1842.48L1132.69 1712.48zM1357.87 672.48L1470.45 737.48L1470.45 867.48L1357.87 932.48L1245.28 867.48L1245.28 737.48zM1695.63 87.48L1808.21 152.48L1808.21 282.48L1695.63 347.48L1583.04 282.48L1583.04 152.48zM1695.63 477.48L1808.21 542.48L1808.21 672.48L1695.63 737.48L1583.04 672.48L1583.04 542.48zM1583.04 672.48L1695.63 737.48L1695.63 867.48L1583.04 932.48L1470.45 867.48L1470.45 737.48zM1808.21 -107.52L1920.8 -42.52L1920.8 87.48L1808.21 152.48L1695.63 87.48L1695.63 -42.52z' stroke='rgba(213%2c 214%2c 219%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1048'%3e%3crect width='2000' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #f3f3f5;
+    --background-color-1: #d5d6db;
+    --color: #343b58;
+    --color-comments: #9699a3;
+    --text-highlight-0: #8c4351;
+    --text-highlight-1: #0f4b6e;
+    --text-highlight-2: #5a4a78;
+    --text-highlight-3: #34548a;
+    --text-highlight-4: #8f5e15;
+    --text-highlight-5: #485e30;
+    --logo-mode: url('/res/colors/logo-tokio-night-light.svg');
+    --font-family-swap: 'Philosopher', sans-serif;
+}
+
+:root[data-theme="genre-storific-dark"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2000' height='2000' preserveAspectRatio='none' viewBox='0 0 2000 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1272%26quot%3b)' fill='none'%3e%3crect width='2000' height='2000' x='0' y='0' fill='rgba(26%2c 27%2c 38%2c 1)'%3e%3c/rect%3e%3cpath d='M189.13 552.89L304.32 619.39L304.32 752.39L189.13 818.89L73.95 752.39L73.95 619.39zM189.13 1350.89L304.32 1417.39L304.32 1550.39L189.13 1616.89L73.95 1550.39L73.95 1417.39zM189.13 1749.89L304.32 1816.39L304.32 1949.39L189.13 2015.89L73.95 1949.39L73.95 1816.39zM304.32 353.39L419.5 419.89L419.5 552.89L304.32 619.39L189.13 552.89L189.13 419.89zM534.69 353.39L649.87 419.89L649.87 552.89L534.69 619.39L419.5 552.89L419.5 419.89zM534.69 752.39L649.87 818.89L649.87 951.89L534.69 1018.39L419.5 951.89L419.5 818.89zM534.69 1151.39L649.87 1217.89L649.87 1350.89L534.69 1417.39L419.5 1350.89L419.5 1217.89zM649.87 1350.89L765.06 1417.39L765.06 1550.39L649.87 1616.89L534.69 1550.39L534.69 1417.39zM649.87 1749.89L765.06 1816.39L765.06 1949.39L649.87 2015.89L534.69 1949.39L534.69 1816.39zM880.24 153.89L995.43 220.39L995.43 353.39L880.24 419.89L765.06 353.39L765.06 220.39zM765.06 353.39L880.24 419.89L880.24 552.89L765.06 619.39L649.87 552.89L649.87 419.89zM880.24 951.89L995.43 1018.39L995.43 1151.39L880.24 1217.89L765.06 1151.39L765.06 1018.39zM880.24 1350.89L995.43 1417.39L995.43 1550.39L880.24 1616.89L765.06 1550.39L765.06 1417.39zM765.06 1550.39L880.24 1616.89L880.24 1749.89L765.06 1816.39L649.87 1749.89L649.87 1616.89zM995.43 -45.61L1110.61 20.89L1110.61 153.89L995.43 220.39L880.24 153.89L880.24 20.89zM995.43 752.39L1110.61 818.89L1110.61 951.89L995.43 1018.39L880.24 951.89L880.24 818.89zM995.43 1151.39L1110.61 1217.89L1110.61 1350.89L995.43 1417.39L880.24 1350.89L880.24 1217.89zM1340.98 1350.89L1456.17 1417.39L1456.17 1550.39L1340.98 1616.89L1225.8 1550.39L1225.8 1417.39zM1225.8 1550.39L1340.98 1616.89L1340.98 1749.89L1225.8 1816.39L1110.61 1749.89L1110.61 1616.89zM1340.98 1749.89L1456.17 1816.39L1456.17 1949.39L1340.98 2015.89L1225.8 1949.39L1225.8 1816.39zM1571.35 153.89L1686.54 220.39L1686.54 353.39L1571.35 419.89L1456.17 353.39L1456.17 220.39zM1456.17 1151.39L1571.35 1217.89L1571.35 1350.89L1456.17 1417.39L1340.98 1350.89L1340.98 1217.89zM1571.35 1350.89L1686.54 1417.39L1686.54 1550.39L1571.35 1616.89L1456.17 1550.39L1456.17 1417.39zM1571.35 1749.89L1686.54 1816.39L1686.54 1949.39L1571.35 2015.89L1456.17 1949.39L1456.17 1816.39zM1456.17 1949.39L1571.35 2015.89L1571.35 2148.89L1456.17 2215.39L1340.98 2148.89L1340.98 2015.89zM1801.72 153.89L1916.9 220.39L1916.9 353.39L1801.72 419.89L1686.54 353.39L1686.54 220.39zM1686.54 1949.39L1801.72 2015.89L1801.72 2148.89L1686.54 2215.39L1571.35 2148.89L1571.35 2015.89zM1916.9 -45.61L2032.09 20.89L2032.09 153.89L1916.9 220.39L1801.72 153.89L1801.72 20.89zM1916.9 353.39L2032.09 419.89L2032.09 552.89L1916.9 619.39L1801.72 552.89L1801.72 419.89z' stroke='rgba(36%2c 40%2c 59%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1272'%3e%3crect width='2000' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #1a1b26;
+    --background-color-1: #24283b;
+    --color: #a9b1d6;
+    --color-comments: #565f89;
+    --text-highlight-0: #f7768e;
+    --text-highlight-1: #7dcfff;
+    --text-highlight-2: #bb9af7;
+    --text-highlight-3: #7aa2f7;
+    --text-highlight-4: #e0af68;
+    --text-highlight-5: #9ece6a;
+    --logo-mode: url('/res/colors/logo-tokio-night.svg');
+    --font-family-swap: 'Philosopher', sans-serif;
+}
+
+:root[data-theme="genre-articalistic"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='2000' preserveAspectRatio='none' viewBox='0 0 2000 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1152%26quot%3b)' fill='none'%3e%3crect width='2000' height='2000' x='0' y='0' fill='rgba(251%2c 241%2c 199%2c 1)'%3e%3c/rect%3e%3cpath d='M 1423%2c-2651.4857878935927 C 1269.2%2c-2251.49 698.4%2c-1451.49 654%2c-651.4857878935927 C 609.6%2c148.51 1319.4%2c818.22 1201%2c1348.5142121064073 C 1082.6%2c1878.81 289.8%2c1869.7 62%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 931%2c-952.0811900682509 C 1058.8%2c-552.08 1579.6%2c247.92 1570%2c1047.9188099317491 C 1560.4%2c1847.92 931.2%2c2857.5 883%2c3047.918809931749 C 834.8%2c3238.34 1239.8%2c2209.58 1329%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 1853%2c-1114.6966234337074 C 1487.2%2c-714.7 46.2%2c85.3 24%2c885.3033765662925 C 1.8%2c1685.3 1664.2%2c2662.36 1742%2c2885.3033765662926 C 1819.8%2c3108.24 678.8%2c2177.06 413%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 488%2c-505.59124694974093 C 690.2%2c-105.59 1577%2c694.41 1499%2c1494.408753050259 C 1421%2c2294.41 3%2c3393.29 98%2c3494.4087530502593 C 193%2c3595.53 1598.8%2c2298.88 1974%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 1584%2c-2473.238350173369 C 1406.6%2c-2073.24 652.2%2c-1273.24 697%2c-473.23835017336904 C 741.8%2c326.76 1826.4%2c1032.11 1808%2c1526.761649826631 C 1789.6%2c2021.41 845.6%2c1905.35 605%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 796%2c-1825.3038624852609 C 861.8%2c-1425.3 1281%2c-625.3 1125%2c174.69613751473912 C 969%2c974.7 21.2%2c1809.64 16%2c2174.6961375147393 C 10.8%2c2539.76 882.4%2c2034.94 1099%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 155%2c-1807.7795783293782 C 501.4%2c-1407.78 1768.6%2c-607.78 1887%2c192.22042167062182 C 2005.4%2c992.22 899.4%2c1830.66 747%2c2192.220421670622 C 594.6%2c2553.78 1049.4%2c2038.44 1125%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 19%2c-3822.939140521985 C 383%2c-3422.94 1741.8%2c-2622.94 1839%2c-1822.9391405219847 C 1936.2%2c-1022.94 521%2c-587.53 505%2c177.06085947801535 C 489%2c941.65 1508.2%2c1635.41 1759%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 140%2c-1165.4180045377436 C 351%2c-765.42 1208.2%2c34.58 1195%2c834.5819954622564 C 1181.8%2c1634.58 18%2c2601.5 74%2c2834.5819954622566 C 130%2c3067.67 1194.8%2c2166.92 1475%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 702%2c-3044.228041163474 C 883.2%2c-2644.23 1711.8%2c-1844.23 1608%2c-1044.2280411634736 C 1504.2%2c-244.23 283.6%2c346.93 183%2c955.7719588365264 C 82.4%2c1564.62 920.6%2c1791.15 1105%2c2000' stroke='rgba(235%2c 219%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1152'%3e%3crect width='2000' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #fbf1c7;
+    --background-color-1: #ebdbb2;
+    --color: #3c3836;
+    --color-comments: #928374;
+    --text-highlight-0: #9d0006;
+    --text-highlight-1: #076678; /* should be a blue */
+    --text-highlight-2: #8f3f71; /* should be a purple */
+    --text-highlight-3: #427b58;
+    --text-highlight-4: #b57614;
+    --text-highlight-5: #79740e;
+    --logo-mode: url('/res/colors/logo-gruvbox-light.svg');
+    --font-family-swap: 'Ubuntu', sans-serif;
+}
+
+:root[data-theme="genre-articalistic-dark"] {
+    --background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1300' height='1500' preserveAspectRatio='none' viewBox='0 0 1300 1500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1204%26quot%3b)' fill='none'%3e%3crect width='1300' height='1500' x='0' y='0' fill='rgba(40%2c 40%2c 40%2c 1)'%3e%3c/rect%3e%3cpath d='M 867%2c-1369.173720230534 C 716.4%2c-1069.17 128.6%2c-469.17 114%2c130.82627976946614 C 99.4%2c730.83 692.4%2c1356.99 794%2c1630.826279769466 C 895.6%2c1904.66 656.4%2c1526.17 622%2c1500' stroke='rgba(80%2c 73%2c 69%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 569%2c-1540.7424964221427 C 590.4%2c-1240.74 756.4%2c-640.74 676%2c-40.742496422142615 C 595.6%2c559.26 116.4%2c1151.11 167%2c1459.2575035778573 C 217.6%2c1767.41 776.6%2c1491.85 929%2c1500' stroke='rgba(80%2c 73%2c 69%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 596%2c-1045.3095217031935 C 710.6%2c-745.31 1275.4%2c-145.31 1169%2c454.6904782968065 C 1062.6%2c1054.69 128.6%2c1745.63 64%2c1954.6904782968065 C -0.6%2c2163.75 689.6%2c1590.94 846%2c1500' stroke='rgba(80%2c 73%2c 69%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 254%2c-758.3674614441405 C 451%2c-458.37 1174.8%2c141.63 1239%2c741.6325385558595 C 1303.2%2c1341.63 611.2%2c2089.96 575%2c2241.6325385558594 C 538.8%2c2393.31 961.4%2c1648.33 1058%2c1500' stroke='rgba(80%2c 73%2c 69%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1204'%3e%3crect width='1300' height='1500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    --background-color-0: #282828;
+    --background-color-1: #504945;
+    --color: #ebdbb2;
+    --color-comments: #a8a8a8;
+    --text-highlight-0: #fb4934;
+    --text-highlight-1: #83a598;
+    --text-highlight-2: #d3869b;
+    --text-highlight-3: #8ec07c;
+    --text-highlight-4: #fabd2f;
+    --text-highlight-5: #b8bb26;
+    --logo-mode: url('/res/colors/logo-gruvbox-dark.svg');
+    --font-family-swap: 'Ubuntu', sans-serif;
+}
+
+
+:root[data-theme="dyslexic-light"] {
+    --background-image: hsl(230, 1%, 98%);
+    --background-color-0: hsl(230, 1%, 98%);
+    --background-color-1: hsl(20, 13%, 93%);
+    --color: hsl(230, 8%, 24%);
+    --color-comments: hsl(230, 4%, 64%);
+    --text-highlight-0: hsl(5, 74%, 59%);
+    --text-highlight-1: hsl(221, 87%, 60%);
+    --text-highlight-2: hsl(301, 63%, 40%);
+    --text-highlight-3: hsl(198, 99%, 37%);
+    --text-highlight-4: hsl(35, 99%, 40%);
+    --text-highlight-5: hsl(119, 34%, 47%);
+    --logo-mode: url('/res/colors/logo-one-light.svg');
+    --font-family-swap: OpenDyslexicAltaRegular;
+}
+
+
+:root[data-theme="dyslexic-dark"] {
+    --background-image: #2d353b;
+    --background-color-0: #2d353b;
+    --background-color-1: #232a2e;
+    --color: #d3c6aa;
+    --color-comments: #859289;
+    --text-highlight-0: #a7c080;
+    --text-highlight-1: #7fbbb3;
+    --text-highlight-2: #d699b6;
+    --text-highlight-3: #e67e80;
+    --text-highlight-4: #dbbc7f;
+    --text-highlight-5: #83c092;
+    --logo-mode: url('/res/colors/logo-everforest-dark.svg');
+    --font-family-swap: OpenDyslexicAltaRegular;
+}

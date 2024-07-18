@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="html-content-holder">
+<div class="section syndicate-inside">
+
+<h2 class="title syndicate-inside-title" id="btn-Preview-Image" type="button">
+  {{ page.title }}
+</h2>
+
+  {% if page.date %}
+    <div class="syndicate-pagedate">
+      <code>{{ page.date }}</code>
+      {% if page.taxonomies.syndicate %}
+      {% for tag in page.taxonomies.syndicate %}
+      <code>Genre: {{tag}}</code>
+      {% endfor %}
+      {% endif %}
+    </div>
+    {% endif %}
+
+  <div id="BTN-Preview-Image" class="syndicate-inside-text">{{ page.content | safe }}</div>
+
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+  var element = document.getElementById("html-content-holder"); // global variable
+  var newData;
+
+  $("#btn-Preview-Image").on('click', function() {
+    html2canvas(element, {
+        allowTaint: true, // this allows rendering of external fonts
+        scale: 3, // triple the size of the image
+        backgroundColor: null, // this sets the background color to transparent
+        logging: true, // this logs the progress of rendering to console
+      })
+      .then(function(canvas) {
+        var dataURL = canvas.toDataURL();
+        var a = document.createElement("a");
+        a.href = dataURL;
+        a.download = "Image.png";
+        a.click();
+      })
+      .catch(function(error) {
+        console.error('Oops, something went wrong!', error);
+      });
+  });
+});
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+  var element = document.getElementById("html-content-holder"); // global variable
+  var newData;
+
+  $("#BTN-Preview-Image").on('click', function() {
+    var originalWidth = element.offsetWidth; // get the original width of the element
+    var newWidth = originalWidth + 6; // add 6px to the width for the transparent border (3px on each side)
+
+    domtoimage.toPng(element, {
+        width: newWidth * 3, // triple the width of the image
+        height: element.offsetHeight * 3, // triple the height of the image
+        style: {
+          transform: "scale(3) translateX(3px)", // scale the image by a factor of 3 and move it to the right by 3px
+          transformOrigin: "top left",
+          borderRadius: "10px", // add the border radius style
+        }
+      })
+      .then(function (dataUrl) {
+        var a = document.createElement("a");
+        a.href = dataUrl;
+        a.download = "Image.png";
+        a.click();
+      })
+      .catch(function (error) {
+        console.error('Oops, something went wrong!', error);
+      });
+  });
+});
+
+</script>
+
+{% endblock content %}

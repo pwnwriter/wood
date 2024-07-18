@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <title>pwn::musings</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/themes.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/readable.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/logo.css">
+
+    {% if page.taxonomies.writings %}
+    {% for tag in page.taxonomies.writings %}
+      <link rel="stylesheet" type="text/css" href="/assets/css/genre/{{tag}}.css" />
+    {% endfor %}
+    {% endif %}
+
+
+    <script src="/assets/js/themeSelector.js" defer></script>
+
+    {% block rss %}
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% endblock %}
+
+    {% if page.taxonomies.writings %}
+    {% for tag in page.taxonomies.writings %}
+    <meta property="og:type" content="{{tag}}" />
+    {% endfor %}
+    {% endif %}
+
+    {% if page.taxonomies.syndicate %}
+    {% for tag in page.taxonomies.syndicate %}
+    <meta property="og:type" content="{{tag}}" />
+    {% endfor %}
+    {% endif %}
+
+    <meta property="og:site_name" content="pwnwriter.xyz" />
+    <meta property="og:image" content="https://pwnwriter.xyz/res/thumbnail-light.png" />
+    {%if section.title%}
+    <title>{{ section.title }}</title>
+    <meta name="og:title" content="{{ section.title }}" />
+    {%endif%}
+    {%if page.title%}
+    <title>{{ page.title }}</title>
+    <meta name="og:title" content="{{ page.title }}" />
+    {%endif%}
+    {%if section.description %}
+    <meta name="description" content="{{ section.description }}" />
+    <meta name="og:description" content="{{ section.description }}" />
+    {%endif%}
+    {%if page.content %}
+    <meta name="description" content="{{ page.content | striptags }}" />
+    <meta name="og:description" content="{{ page.content | striptags }}" />
+    {%endif%}
+
+    <link rel="shortcut icon" type="image/x-icon" href="/res/logo.svg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="rgb(253, 246, 227)">
+
+
+    <!----------------IndieWeb Auth------------------>
+    <link rel="me" href="https://github.com/pwnwriter" />
+    <link rel="me" href="mailto:hey@pwnwriter.xyz" />
+    <!----------------/IndieWeb Auth------------------>
+
+    <!----------------WebMentions------------------>
+    <link rel="webmention" href="https://webmention.io/pwnwriter.xyz/webmention" />
+    <link rel="pingback" href="https://webmention.io/pwnwriter.xyz/xmlrpc" />
+    <!----------------/WebMentions------------------>
+
+</head>
+
+
+<body onload="updateThemeSelector(); updateLinkSelector();">
+
+  <!------------------LOGO------------------->
+  <!-- <div class="logo-container"> -->
+  <!--   <a href="/"> -->
+  <!--     <div class="inner-logo-container"></div> -->
+  <!--   </a> -->
+  <!-- </div> -->
+
+  <!------------------NAV------------------->
+
+		<nav data-style="classy">
+			{% block nav %}
+			<span class="main-li"><a href="/">Main</a></span>
+			<span><a href="/blog">Blog</a></span>
+			<span><a href="/writings">Writings</a></span>
+		    <span><a href="/syndications">POSSE</a></span>
+			<span><a href="/more">More</a></span>
+			{% endblock nav %}
+		</nav>
+
+  <!------------------BODY------------------>
+
+  <section class="section-body">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
+
+  <!------------------HIDDEN------------------>
+
+    <div class="hidden">
+      <a rel="me" href="https://fosstodon.org/@pwnwriter">Mastodon</a>
+    </div>
+
+
+    <div class="hidden h-card">
+      <img class="u-photo icon" alt="{{ config.author }}" src="/res/thumbnail.png" />
+      <a class="p-name u-url" href="{{ config.base_url }}">{{ config.author }}</a>
+      <p class="p-note">{{ config.description }}</p>
+    </div>
+
+
+  <!----------------FOOTER------------------>
+    <footer>
+      {% block footer %}
+      <p class="codewithlove">This website does not collect your data.<span class="main-background">No languages models</span>were involved in writing the content here except where explicitly noted.</p>
+
+      <p><a href="/atom.xml">RSS</a> | <a href="https://github.com/pwnwriter.gpg" >pgp::fingerprint</a> | <a href="https://github.com/pwnwriter/wood" target="_blank">Source Code</a></p>
+
+      <!-- <p>✨<a href="https://ctp-webr.ing" target="_blank">catppuccin-webring</a>✨</p> -->
+      {% endblock footer %}
+    </footer>
+
+    <ol id="themeSelector" reversed></ol>
+    <script src="/assets/js/linkSelector.js" defer></script>
+    <ol id="linkSelector"></ol>
+
+</html>

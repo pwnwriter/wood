@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Scientiac</title>
+
+  {% block rss %}
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false)
+    }}">
+  {% endblock %}
+
+  <link rel="shortcut icon" type="image/x-icon" href="/res/logo-d.svg">
+
+  <script src="/assets/js/themeSelector.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="mango">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/latex-fonts.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/logo.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/readable.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/global.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/themes.css">
+
+</head>
+
+
+<body>
+  <section style="position: relative; top: 10rem;">
+    <!------------------LOGO------------------->
+    <div class="logo-container">
+      <a href="/">
+        <div class="inner-logo-container"></div>
+      </a>
+    </div>
+
+
+    <h1 style="
+    text-align: center;
+    font-size: 3rem;
+    ">
+      404 Error!
+    </h1>
+
+    <h2 style="
+    text-align: center;
+    font-size: 2.4rem;
+    ">
+      Are you searching for something?
+    </h2>
+
+  </section>
+</body>
+
+</html>

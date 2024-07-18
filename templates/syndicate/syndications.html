@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="logs">
+<h1 class="title-writings">
+  {{ section.title }}
+</h1>
+  <p class="subtitle --center"><code><a href="/syndicate/posse/atom.xml">RSS</a></code> <code><a href="/syndicate/">Syndicate</a></code></p>
+
+  {% for page in paginator.pages %}
+  <article class="syndicate">
+  <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+    <p class="subtitle --center"><code>{{ page.date }}</code></p>
+    <div class="syndicate-text">
+    {{ page.content | safe }}
+    </div>
+		</article>
+	{% endfor %}
+
+{% if paginator.last != paginator.first %}
+  
+<nav data-style="none" class="pagination">
+  {% if paginator.previous %}
+  <a class="page-nav" href="{{ paginator.previous }}">Prior</a>
+  {% else %}
+  <a class="page-nav" href="{{ paginator.last }}">Dated</a>
+  {% endif %}
+
+  {% if paginator.previous or paginator.next -%}
+    <a class="page-nav" href="#">{{ paginator.current_index }} of  {{ paginator.number_pagers }} </a>
+  {%- endif %}
+
+  {% if paginator.next %}
+  <a class="page-nav" href="{{ paginator.next }}">Later</a>
+  {% else %}
+  <a class="page-nav" href="{{ paginator.first }}">Latest</a>
+  {% endif %}
+</nav>
+
+{% endif %}
+
+{% endblock content %}

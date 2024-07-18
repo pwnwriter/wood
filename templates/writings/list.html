@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>
+  Writings
+</h1>
+
+<h2 class="subtitle">{{ terms | length }} writings in total.</h2>
+
+{% for tag in terms %}
+<h2><a href="{{ get_taxonomy_url(kind='writings', name=tag.name) }}"><b>{{tag.name}} <sup>{{ tag.pages | length }}</sup></b></a></h2>
+{% endfor %}
+
+
+<div class="search-container">
+<input id="search" type="search" placeholder="Search">
+
+<div class="search-results">
+<div class="search-results__items"></div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
+
+{% endblock content %}
+

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if page.date %}
+  <div class="pagedate">
+    <code>{{ page.date }}</code>
+    {% if page.taxonomies.writings %}
+    {% for tag in page.taxonomies.writings %}
+    <code>Genre: {{tag}}</code>
+    {% endfor %}
+    {% endif %}
+    
+  </div>
+{% endif %}
+
+<div class=section>
+
+<h1 class="title">
+  {{ page.title }}
+</h1>
+
+{{ page.content | safe }}
+
+</div>
+
+{% endblock content %}
