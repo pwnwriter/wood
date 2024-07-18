@@ -17,7 +17,7 @@ Places and links to contact me.
 
 
 ### [now](now)
-answring what am i upto?
+Answring what am i upto?
 
 ### [pics](pics)
 Random pictures i've clicked

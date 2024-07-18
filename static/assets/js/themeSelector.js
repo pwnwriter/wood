@@ -1,42 +1,42 @@
 const themes = {
-  genre: [
-    'poetic',
-    'poetic-dark',
-    'storific',
-    'storific-dark',
-    'articalistic',
-    'articalistic-dark'
-  ],
-  dyslexic: [
-    'light',
-    'dark'
-  ],
-  everforest: [
-    'light',
-    'dark'
-  ],
-  gruvbox: [
-    "light",
-    "dark"
-  ],
-  night: [
-    'solis',
-    'spaceduck',
-    'gotham',
-    'dracula'
-  ],
-  nord: [
-    'light',
-    'dark'
-  ],
-  one: [
-    'light',
-    'dark'
-  ],
-  tokyo: [
-    'night',
-    'night-light'
-  ],
+  // genre: [
+  //   'poetic',
+  //   'poetic-dark',
+  //   'storific',
+  //   'storific-dark',
+  //   'articalistic',
+  //   'articalistic-dark'
+  // ],
+  // dyslexic: [
+  //   'light',
+  //   'dark'
+  // ],
+  // everforest: [
+  //   'light',
+  //   'dark'
+  // ],
+  // gruvbox: [
+  //   "light",
+  //   "dark"
+  // ],
+  // night: [
+  //   'solis',
+  //   'spaceduck',
+  //   'gotham',
+  //   'dracula'
+  // ],
+  // nord: [
+  //   'light',
+  //   'dark'
+  // ],
+  // one: [
+  //   'light',
+  //   'dark'
+  // ],
+  // tokyo: [
+  //   'night',
+  //   'night-light'
+  // ],
   catppuccin: [
     'latte',
     'frappe',
@@ -45,8 +45,8 @@ const themes = {
   ],
 }
 const defaultThemes = {
-  light: "genre-storific",
-  dark: "genre-storific-dark"
+  light: "catppuccin-latte",
+  dark: "catppuccin-mocha"
 }
 const prefersDark = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
 let theme = localStorage.theme || (prefersDark ? defaultThemes.dark : defaultThemes.light);
