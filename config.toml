@@ -52,5 +52,9 @@ include_content = true
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+# Catppuccin-Macchrappiato
+# Catppuccin-mocha
+# Catppuccin-Frappe
+# Catppuccin-Latterapp
 highlight_theme = "Catppuccin-mocha"
 extra_syntaxes_and_themes = ["themes"]
