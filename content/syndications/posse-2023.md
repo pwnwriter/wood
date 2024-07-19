@@ -24,6 +24,7 @@ While enjoying with my parents, I've done a lot of open source work, especially
 about the Rust's core. As previous year, This year as well, i've attended
 [`Threatcon`][threatcon]. It was soo much fun ;o;.
 
+Yes and bye!
 
 <!-- links -->
 [haylxon]: https://github.com/pwnwriter/haylxon
