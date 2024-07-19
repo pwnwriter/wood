@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://pwnwriter.github.io/wood"
+base_url = "https://pwnwriter.xyz"
 
 #Title
 title = "pwn()"
