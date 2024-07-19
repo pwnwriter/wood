@@ -1,6 +1,6 @@
 +++
 title = "Installing NixOS on hetzner vps"
-date = 2020-12-17
+date = 2024-07-19
 [taxonomies]
 writings=["guides"]
 +++
