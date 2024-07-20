@@ -15,24 +15,24 @@ through how to install NixOS on any VPS.
 
 > PS: I'm using `hetzner` vps, already running an ubuntu iso.
 
-### How
+## How
 
 [Kexec] is a system call that allows you to load and boot into a new kernel
 directly from the currently running kernel. We will use it to boot into our
 minimal install system without needing a flash drive. Additionally,
 [nixos-anywhere][nixos-anywhere] allows us to automatically format and
-partition using `[disko]` in a declaratively , and install the OS.
+partition using [disko] declaratively, and install the OS.
 
 
 Requirements:
 - A nix(os) system
 - Root access over the server
 
-### Configuration
+## Configuration
 
 We'll be using `flakes` to define our overall `nixos` config.
 
-The file tree structure should be like this below.
+The file tree structure should look like this below.
 
 ```bash
 ls -l
@@ -42,7 +42,7 @@ ls -l
    └── flake.nix
 ```
 
-- `flake.nix` is similar to `cargo.lock`, `package.json`, `lazy-lock.json` it locks the package git rev hash.
+- `flake.nix` is similar to `cargo.lock,` `package.json,` `lazy-lock.json` it locks the package git rev hash.
 - `configuration.nix` is used to define our configuration for the nixos.
 - `disk-config.nix` is to define our disko config 
 
@@ -61,7 +61,7 @@ The initial `flake.nix` skeleton look like this
 
 ```
 
-Inside `flake.nix`, we'll add our input repo url, `nixpkgs` and `disko`.
+Inside `flake.nix`, we'll add our input repository url, `nixpkgs` and `disko`.
 
 
 ```nix
@@ -78,8 +78,8 @@ Inside `flake.nix`, we'll add our input repo url, `nixpkgs` and `disko`.
 }
 ```
 
-and then we'll define our output we'll define our servers. 
-For this example, i'm using my server name as `wolf`, you can name your something else.
+and then we'll define our output  servers. For this example, i'm using my
+server name as `wolf`, you can name yours anything.
 
 ```nix
 {
@@ -104,7 +104,7 @@ For this example, i'm using my server name as `wolf`, you can name your somethin
 > My server is `x86_64-linux` you'll want to change that accordingly. 
 
 I'm using the default example `disk` config from `disko`. It'll create `boot`
-and `root` partitions. I als recommend using the default unless you explicitly
+and `root` partitions. I also recommend using the default unless you explicitly
 want to change. You'll want to change the device name, to know run `$ lsblk
 `
 
@@ -196,7 +196,7 @@ I'll be using `grub` as bootloader.
 }
 ```
 
-`Openssh` is necessary fot us to able to ssh into the new server.
+`Openssh` is necessary for us to be able to ssh into the new server.
 
 ```nix
 {
@@ -246,9 +246,9 @@ Now, our final `configuration.nix` should look like this.
 }
 ```
 
-### Install the os
+## Install the os
 
-Now, we'll have to run our flake to install nix on the vps.
+Now, we'll have to run our flake to install nixos on the vps.
 
 ```bash
  nix run github:nix-community/nixos-anywhere -- --flake .#wolf root@<server-ip>
@@ -264,8 +264,9 @@ Congratulations!! The nixos has been installed successfully. You should be able 
 ```bash
 sudo nixos-rebuild switch --flake .#wolf
 ```
+the other time on any changes.
 
-### Aditional tips...
+## Aditional tips...
 
 You can use `justfile` to make this script running easy
 
