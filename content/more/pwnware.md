@@ -8,7 +8,6 @@ title = "Currently Using"
 * Browser - Safari, Firefox
 * Terminal - Wezterm
 * Text Editor/IDE - Neovim
-* Vector Graphics - Inkscape 
 * Static Site Generator - Zola and Hugo
 * Shell - zsh
 * Prompt - Starship
@@ -18,43 +17,24 @@ title = "Currently Using"
 ## Cross Platform
 
 * Gemini Client - Lagrange/Amfora
-* Note-taking - Obsidian 
+* Note-taking - Neovim, mdbook
 * Video Player - MPV
 * Communication - Matrix, Signal, Telegram
-* Password Manager - Bitwarden
+* Password Manager - pass
 * Email - Proton, tutanota, Gmail
 
 ## Smartphone
 
-* ROM(OS) - evolutionX
-* Launcher - Nova Launcher
-* RSS Reader - Read You
+* ROM(OS) - Pixel Experience
+* RSS Reader -  izrss
 * Browser - Firefox/Brave
-* App Store - Neo Store (F-droid)
-* Email Client - K9-mail
+* App Store - F-droid
+* Email Client - Tutanota
 * Download Manager - Navi/aria2
 * Torrent Client - Libre Torrent
-* Gallery - Aves
-* Youtube - Revanced
-* Starmap - Stellarium
 * Terminal Emulator - Termux
-* Video Player - VLC
-* Reddit Client - Infinity
-* Lemmy Client - Eternity
-* Podcast Aggregator - Antennapod
 
-## TV?
-
-* OS - Android
-* Youtube - S-tube
-* Movies and Series - Cloudstream
-* Browser - TV Bro
-
-## Extra
+## Extras
 
 * Null pointer - rustypaste
-
-
-
-
-
+* Git - cgit, soft-serve
