@@ -1,12 +1,10 @@
 +++
-title = "POSSE"
+title = "The 2023"
 date = 2024-01-04
 
 [taxonomies]
 syndicate=["POSSE"]
 +++
-
-## The 2023
 
 I've always wanted to spend more time with my parents. High school and the
 hostel days, I had so little time with them. But 2023 changed that for me. I
