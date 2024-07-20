@@ -1,12 +1,10 @@
 +++
-title = "POSSE"
+title = "The 2022"
 date = 2023-01-30
 
 [taxonomies]
 syndicate=["POSSE"]
 +++
-
-## The 2022
 
 My 2022 was an extraordinary year for me. I launched [`METISLinux`][metislinux], a project I'm
 proud of, reflecting my dedication. I also met a diverse group of individuals
