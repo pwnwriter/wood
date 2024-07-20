@@ -5,6 +5,8 @@ date = 2024-07-19
 writings=["guides"]
 +++
 
+<img alt="Nix Pill" src="/images/nix-hetzner/nix-pills.png" style="width: 15rem;"/>
+
 My company has recently provided me with a VPS to test things before deploying
 them to production. This is a great opportunity for me to push the envelope and
 use Nix extensively. 
