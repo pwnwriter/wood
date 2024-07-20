@@ -1,5 +1,5 @@
 +++
-title = "NixOS on any linux vps"
+title = "Install NixOS on any VPS"
 date = 2024-07-19
 [taxonomies]
 writings=["guides"]
