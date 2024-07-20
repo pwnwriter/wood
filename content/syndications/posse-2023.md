@@ -21,8 +21,8 @@ torches. We would spend the rest of the day playing with the goats.
 
 While enjoying with my parents, I've done a lot of open source work, especially
 `rust`. I've written [`haylxon`][haylxon], [`hysp`][hysp] and explored a lot
-about the Rust's core. As previous year, This year as well, i've attended
-[`Threatcon`][threatcon]. It was soo much fun ;o;.
+about the Rust's core and internals. As previous year, This year as well, i've
+attended [`Threatcon`][threatcon]. It was soo much fun ;o;.
 
 Yes and bye!
 

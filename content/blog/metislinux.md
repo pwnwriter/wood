@@ -5,7 +5,6 @@ date = 2024-07-12
 writings=["Reports"]
 +++
 
-#### The why
 
 This!, exactly 2 years ago on my 18th birthday, I launched
 [`metislinux`][metislinux-git] a beautiful runit based linux distro. I had fun
@@ -16,6 +15,7 @@ custom-managed package sources: _Andromeda, Cosmic, and Recon_. While working on
 this project, I received tremendous support from the Plan9 community on Matrix
 and many others. I wanna thank you guys wholeheartly <3.
 
+#### The why
 
 I've planed a lot to bring in metislinux. I've even wrote a package manager
 [hysp][hysp], a custom bar for wayland [heliumbar][heliumbar] in rust btw, but
@@ -32,7 +32,7 @@ available at [github/metis-os][metislinux-git] under the [MIT][MIT] License. The
 resources, and tools are free for you to use and build upon. Feel free to fork
 it, learn from it, or create something new.
 
-To everyone involved in Metislinux—whether you contributed code, reported bugs,
+To everyone involved in Metislinux; whether you contributed code, reported bugs,
 shared feedback, or simply used it—thank you! Your support has been invaluable,
 and I couldn’t have achieved this without you.
 
