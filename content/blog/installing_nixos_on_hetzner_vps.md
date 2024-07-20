@@ -37,7 +37,7 @@ We'll be using `flakes` to define our overall `nixos` config.
 The file tree structure should look like this below.
 
 ```bash
-ls -l
+$ tree .
    nixos-on-vps
    ├── configuration.nix
    ├── disk-config.nix
