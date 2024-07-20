@@ -4,6 +4,10 @@ template = "standalone.html"
 page_template = "page.html"
 +++
 
+
+### [pwnware](pwnware) 
+A list of software that I am currently using.
+
 ### [pwn::notes](https://pwnwriter.github.io/pwnotes)
 My random raw notes on various topics
 
@@ -15,16 +19,8 @@ A list of projects i've worked on so far
 ### [Contact](contact)
 Places and links to contact me.
 
-
 ### [now](now)
 Answring what am i upto?
-
-### [pics](pics)
-Random pictures i've clicked
-
-
-### [pwnware](pwnware) 
-A list of software that I am currently using.
 
 ## RSS
 
