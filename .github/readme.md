@@ -1,4 +1,4 @@
-### About 💬
+### About
 
 Over the years, I've redesigned my website many times. Whenever I see something new that catches my eye, I want to incorporate it into my site. This time, I'd like to use `zola`. 
 
@@ -10,14 +10,25 @@ Over the years, I've redesigned my website many times. Whenever I see something 
 
 CC: [humanmademark][humanmademark]
 
-### The Colorscheme 🎨
+### The Colorscheme
 
 Since all of my desktops use the [`catppuccin`][catppuccin] colorscheme, I want to use it here as well. I hope to become a member of [`ctp-webring`][ctp-webring] soon.
 
-### Tips 🍦
+### Tips 
 
 -   On [`NIX`][Nix] , run `nix develop` to enter a shell with all `deps`.
+  
+  ```bash
+$ zola serve # serves the site
+$ zola build # builds the site
+  ```
 -   Run `Nix develop .#lychee` to check for broken links
+
+### History
+
+- [2022]
+- [2023]
+- [Now]
 
 <!-- links -->
 
@@ -26,3 +37,6 @@ Since all of my desktops use the [`catppuccin`][catppuccin] colorscheme, I want 
 [humanmademark]: https://humanmademark.com
 [scientiac]: https://github.com/scientiac
 [Nix]: https://github.com/NixOS/nix
+[2022]: https://web.archive.org/web/20221008080446/https://pwnwriter.xyz/
+[2023]: https://web.archive.org/web/20231114032508/https://pwnwriter.xyz/
+[Now]: https://pwnwriter.xyz
