@@ -40,17 +40,13 @@ ports`, `running arbitary javascript` and a lot more.
 ![][hxn]
 
 You can pass a file containing a list of urls, and define height, width and
-even a deplayed screenshot is possible. 
+even a delayed screenshot is possible. 
 
 One of the most interesting usages of this tools is that, you can run it on `github` actions 
 to take screenshot of your subdomain, zip that out upload to [0x0.st][0x0] or your own instance.
 
-I guess it's this for now.
-
-Links: 
-
-[@pwnwriter/haylxon][haylxon]
-
+After the talk, I was gifted some cute swag and a letter of appreciation. I
+want to thank OWASP for that <3.
 
 <!---Links-->
 [owasp]: https://owasp.org
