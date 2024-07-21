@@ -244,7 +244,7 @@ Now, our final `configuration.nix` should look like this.
     "You're public ssh key"
   ];
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }
 ```
 
