@@ -183,7 +183,7 @@ We'll first import `qemu-guest` module since it's a virtual machine.
     (modulesPath + "/profiles/qemu-guest.nix")
     ./disk-config.nix
   ];
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }
 ```
 
