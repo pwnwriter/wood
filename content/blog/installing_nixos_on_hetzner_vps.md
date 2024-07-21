@@ -272,7 +272,7 @@ the other time on any changes.
 
 You can use `justfile` to make this script running easy
 
-```makefile
+```Makefile
 set shell := ["zsh", "-c"]
 
 _default:
@@ -284,17 +284,17 @@ alias r := rebuild
 
 # lists build generations
 gens:
-    @echo "🏠🏠🏠 Listing home-manager generations 🏠🏠🏠"
-    @home-manager generations
+    @echo "Listing build generations "
+    @nix-env --list-generations
 
 # cleans up the nix garbage
 clean:
     @echo "Cleaning up unused Nix store items"
-    @nix-collect-garbage -d
+    @sudo nix-collect-garbage -d
 
 # Builds the serer
 rebuild:
-    @echo "Rebuilding Linux server configuration"
+    @echo "Rebuilding server configuration"
     @sudo nixos-rebuild switch --flake .#wolf
 ```
 
