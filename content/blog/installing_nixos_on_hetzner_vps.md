@@ -2,7 +2,7 @@
 title = "Install NixOS on any VPS"
 date = 2024-07-19
 [taxonomies]
-writings=["guides"]
+writings=["Guides"]
 +++
 
 <img alt="Nix Pill" src="/images/nix-hetzner/nix-pills.png" style="width: 15rem;"/>
@@ -29,6 +29,8 @@ partition using [disko] declaratively, and install the OS.
 Requirements:
 - A nix(os) system
 - Root access over the server
+- 1 gigs of RAM
+- 1 cores of cpu
 
 ## Configuration
 
@@ -222,7 +224,7 @@ environment.systemPackages = map lib.lowPrio [
 
 Now, our final `configuration.nix` should look like this.
 
-```nix
+```gitdiff
 { modulesPath, config, lib, pkgs, ... }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
