@@ -504,3 +504,8 @@ button, a.button {
   }
 
 }
+
+/* Footer Links */
+.footer-links a {
+    text-decoration: none;
+}
