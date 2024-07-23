@@ -224,7 +224,7 @@ environment.systemPackages = map lib.lowPrio [
 
 Now, our final `configuration.nix` should look like this.
 
-```gitdiff
+```nix
 { modulesPath, config, lib, pkgs, ... }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
