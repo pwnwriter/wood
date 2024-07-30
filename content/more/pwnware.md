@@ -13,6 +13,7 @@ title = "Currently Using"
 * Prompt - Starship
 * File manager - Yazi
 * Colorscheme - Catppuccin
+* RSS Reader -  izrss
 
 ## Cross Platform
 
@@ -26,7 +27,6 @@ title = "Currently Using"
 ## Smartphone
 
 * ROM(OS) - Pixel Experience
-* RSS Reader -  izrss
 * Browser - Firefox/Brave
 * App Store - F-droid
 * Email Client - Tutanota
