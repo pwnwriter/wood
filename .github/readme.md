@@ -8,7 +8,7 @@ Over the years, I've redesigned my website many times. Whenever I see something 
 > ___This website does not collect your data. `No language models` were involved in writing the content here except where explicitly noted.___
 
 
-CC: [humanmademark][humanmademark]
+CC: [brainmade.org][brainmade]
 
 ### The Colorscheme
 
@@ -28,15 +28,15 @@ $ zola build # builds the site
 
 - [2022]
 - [2023]
-- [Now]
+- [Present]
 
 <!-- links -->
 
 [catppuccin]: https://github.com/catppuccin
 [ctp-webring]: https://ctp-webr.ing/
-[humanmademark]: https://humanmademark.com
+[brainmade]: https://brainmade.org
 [scientiac]: https://github.com/scientiac
 [Nix]: https://github.com/NixOS/nix
 [2022]: https://web.archive.org/web/20221008080446/https://pwnwriter.xyz/
 [2023]: https://web.archive.org/web/20231114032508/https://pwnwriter.xyz/
-[Now]: https://pwnwriter.xyz
+[Present]: https://pwnwriter.xyz
