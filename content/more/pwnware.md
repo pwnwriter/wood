@@ -19,7 +19,7 @@ title = "Currently Using"
 
 * Gemini Client - Lagrange/Amfora
 * Note-taking - Neovim, mdbook
-* Video Player - MPV
+* Video Player - Mpv
 * Communication - Matrix, Signal, Telegram
 * Password Manager - pass
 * Email - Proton, tutanota, Gmail
@@ -32,9 +32,14 @@ title = "Currently Using"
 * Email Client - Tutanota
 * Download Manager - Navi/aria2
 * Torrent Client - Libre Torrent
-* Terminal Emulator - Termux
+* Terminal Emulator - Termux, nix-on-droid
 
 ## Extras
 
 * Null pointer - rustypaste
 * Git - cgit, soft-serve
+
+##### ___Last updated: Tue Jul 30 2024___
+
+
+
