@@ -12,7 +12,8 @@ CC: [brainmade.org][brainmade]
 
 ### The Colorscheme
 
-Since all of my desktops use the [`catppuccin`][catppuccin] colorscheme, I want to use it here as well. I hope to become a member of [`ctp-webring`][ctp-webring] soon.
+![Unknown](https://github.com/user-attachments/assets/9c4323f1-7372-4ae4-b81f-d3b2fef068c3)
+
 
 ### Tips 
 
