@@ -16,6 +16,9 @@ jobs:
       - name: Install Nix package manager
         uses: DeterminateSystems/nix-installer-action@main
 
+      - name: Setup Nix cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
+
       - name: Check for broken links
         run: |
           nix develop .#lychee --command lychee pwnwriter.xyz
