@@ -49,10 +49,11 @@ manage linux server's, providing technical support and so on.
     environment was incredibly friendly and helpful, which made the experience even
     better.
 
-<div style="display: flex; gap: 1rem;">
-    <img alt="Nix Pill" src="/images/mulkot/patan.png" style="width: 15rem; height: 20rem;"/>
-    <img alt="Nix Pill" src="/images/mulkot/nix.png" style="width: 15rem; height: 20rem;"/>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <img alt="Nix Pill" src="/images/mulkot/patan.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+    <img alt="Nix Pill" src="/images/mulkot/nix.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
 </div>
+
 
 ### Moving on ...
 
