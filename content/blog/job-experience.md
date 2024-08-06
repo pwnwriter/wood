@@ -27,7 +27,7 @@ manage linux server's, providing technical support and so on.
     Gotta miss them 🫡
     
 
-<img alt="Nix Pill" src="/images/mulkot/we.png" style="width: 15rem; height: 20rem;"/>
+<img alt="we" src="/images/mulkot/we.png" style="width: 15rem; height: 20rem;"/>
 
 - A new opportunity :
     
@@ -50,8 +50,8 @@ manage linux server's, providing technical support and so on.
     better.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-    <img alt="Nix Pill" src="/images/mulkot/patan.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
-    <img alt="Nix Pill" src="/images/mulkot/nix.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+    <img alt="patan" src="/images/mulkot/patan.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+    <img alt="nix-mac" src="/images/mulkot/nix.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
 </div>
 
 
