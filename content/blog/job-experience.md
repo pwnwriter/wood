@@ -27,7 +27,7 @@ manage linux server's, providing technical support and so on.
     Gotta miss them 🫡
     
 
-<img alt="we" src="/images/mulkot/we.png" style="width: 15rem; height: 20rem;"/>
+<img alt="we" src="/images/mulkot/we.png" style="width: 15rem; height: 20rem; object-fit: cover;"/>
 
 - A new opportunity :
     
