@@ -46,7 +46,7 @@ $ tree .
    └── flake.nix
 ```
 
-- `flake.nix` is similar to `cargo.lock,` `package.json,` `lazy-lock.json` it locks the package git rev hash.
+- `flake.lock` is similar to `cargo.lock,` `package.json,` `lazy-lock.json` it locks the package git rev hash.
 - `configuration.nix` is used to define our configuration for the nixos.
 - `disk-config.nix` is to define our disko config 
 
