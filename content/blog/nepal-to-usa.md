@@ -11,9 +11,9 @@ the new school, I’m starting a fresh chapter in a new country.
 
 
 ## Background
-After finishing high school, I made the exciting decision to pursue my
+After finishing high school, I made the decision to pursue my
 bachelor’s degree in the US. My visa interview on April 25 went well, and I was
-thrilled to receive the approval. In the time leading up to my departure, I
+really excited to receive the approval. In the time leading up to my departure, I
 cherished moments of relaxation with my office friends and family.
 
 When the day finally arrived on August 19, I was overwhelmed with a mix of
