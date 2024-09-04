@@ -38,6 +38,8 @@ concerned about, but I ended up having to go through the security check twice.
 Being alone and a little nervous, it was a bit unsettling, but I managed to
 handle it with a bit of humor.
 
+## The City
+
 The flight from Doha to Miami was fantastic. The pictures and lights of Doha
 are still vivid in my mind—they were absolutely stunning. 
 
@@ -45,7 +47,14 @@ I finally landed in Miami around 11 o’clock morning after clearing immigration
 The weather is really pleasant. The city itself is a lot of fun, especially if
 you enjoy its vibrant atmosphere.
 
-<img alt="we" src="/images/nepal-usa/miami.mp4" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+<img alt="we" src="/images/nepal-usa/river.mp4" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <img alt="patan" src="/images/nepal-usa/me.jpeg" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+    <img alt="nix-mac" src="/images/nepal-usa/friends.jpeg" style="width: 15rem; height: 20rem; object-fit: cover;"/>
+</div>
+
+<img alt="patan" src="/images/nepal-usa/river.jpeg" style="width: 15rem; height: 20rem; object-fit: cover;"/>
 
 
 ## The Next Move
