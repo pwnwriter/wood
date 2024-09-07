@@ -1,5 +1,5 @@
 +++
-title = "My Big Move from Nepal to the USA"
+title = "Moving from Nepal to the USA"
 date = 2024-09-02
 [taxonomies]
 writings=["Transition"]
