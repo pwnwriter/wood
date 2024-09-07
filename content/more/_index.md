@@ -14,13 +14,9 @@ My random raw notes on various topics
 ### [projects://](projects)
 A list of projects i've worked on so far
 
-## Information
 
 ### [Contact](contact)
 Places and links to contact me.
-
-### [now](now)
-Answring what am i upto?
 
 ## RSS
 
