@@ -5,47 +5,40 @@ date = 2024-09-02
 writings=["Transition"]
 +++
 
-Moving from Nepal to the USA has been one of the biggest changes in my life.The
-moment I landed, everything felt new and different. From the busy streets to
-the new school, I’m starting a fresh chapter in a new country. 
+Moving from Nepal to the USA has been a huge change in my life. Everything felt
+new and different as soon as I arrived. From the busy streets to my new school,
+I’m starting a fresh chapter in a new country.
 
 
 ## Background
-After finishing high school, I made the decision to pursue my
-bachelor’s degree in the US. My visa interview on April 25 went well, and I was
-really excited to receive the approval. In the time leading up to my departure, I
-cherished moments of relaxation with my office friends and family.
+After finishing high school, I decided to get my bachelor’s degree in the US.
+My visa interview on April 25 went well, and I was thrilled to get the
+approval. Before I left, I enjoyed relaxing with my office friends and family.
 
-When the day finally arrived on August 19, I was overwhelmed with a mix of
-emotions. As I prepared to board the flight, my parents were there, tearfully
-saying their goodbyes. I found myself in tears as well, feeling a mix of
-nervousness and sadness. It was my first flight, and the idea of leaving my
-parents and starting a new chapter in a foreign land felt both exhilarating and
-daunting. The thought of facing this journey without their immediate support
-was intimidating, and the prospect of finding my own way was both exciting and
-bit scary.
+On August 19, the day of my departure, I felt overwhelmed with many emotions.
+My parents were there to say goodbye, and we were all in tears. It was my first
+flight, and leaving my parents to start a new life in a foreign country felt
+both exciting and scary. The idea of facing this journey without their
+immediate support was daunting, and finding my own way felt both thrilling and
+a bit frightening.
 
 ## The flight
-The flight was quite smooth overall. After the five hours journey from Nepal, I had a
-transit in Doha, where I was amazed by the size of the airport—it's enormous,
-and it's easy to get lost if you’re not careful. During the flight, I made a
-great new friend, which made the trip even more enjoyable.
+The flight was mostly smooth. After the five-hour trip from Nepal, I had a
+layover in Doha. The airport there is huge, and it’s easy to get lost. I made a
+new friend on the flight, which made the trip better.
 
-However, I had a bit of a hiccup with security. After the flight, I went
-through a security check with my carry-on bag, which contained just my laptop
-and a few essentials. I’m not sure if there was something specific they were
-concerned about, but I ended up having to go through the security check twice.
-Being alone and a little nervous, it was a bit unsettling, but I managed to
-handle it with a bit of humor.
+I had a small issue with security. I had to go through a security check twice
+with my carry-on bag, which had just my laptop and a few essentials. I was a
+bit nervous, but I managed to handle it with some humor.
 
 ## The City
 
-The flight from Doha to Miami was fantastic. The pictures and lights of Doha
-are still vivid in my mind—they were absolutely stunning. 
+The flight from Doha to Miami was great. The lights and pictures of Doha were
+amazing.
 
-I finally landed in Miami around 11 o’clock morning after clearing immigration.
-The weather is really pleasant. The city itself is a lot of fun, especially if
-you enjoy its vibrant atmosphere.
+I landed in Miami around 11 AM, after clearing immigration. The weather here is
+nice, and the city is a lot of fun, especially if you like its lively
+atmosphere.
 
 <img alt="we" src="/images/nepal-usa/river.mp4" style="width: 15rem; height: 20rem; object-fit: cover;"/>
 
@@ -58,9 +51,9 @@ you enjoy its vibrant atmosphere.
 
 
 ## The Next Move
-My college friends are here with me, but I really miss my parents back home. I
-also miss the weather, culture, and everyday life in Nepal. My next step is to
-become stronger and more adaptable, so I can handle whatever comes my way and
-fit in better in my new environment.
+I have college friends here with me, but I really miss my parents. I also miss
+the weather, culture, and everyday life in Nepal. My next step is to become
+stronger and more adaptable so I can handle whatever comes my way and fit in
+better in my new environment.
 
 See you around!
