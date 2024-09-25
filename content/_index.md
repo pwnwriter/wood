@@ -3,7 +3,7 @@ title = "pwn::musings"
 description = "A place where I freely share my thoughts."
 +++
 
-Hello, I’m Nabeen, online known as PwnWriter. I’m 20 years old from USA, Florida.
+Hello, I’m Nabeen, online known as PwnWriter. I’m 20 years old from Nyc, USA.
 
 ## About this site...
 
