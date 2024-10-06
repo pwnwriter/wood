@@ -21,4 +21,4 @@ jobs:
 
       - name: Check for broken links
         run: |
-          nix develop .#lychee --command lychee pwnwriter.xyz
+          nix develop .#lychee --command lychee pwnwriter.me
