@@ -1,5 +1,5 @@
 {
-  description = "pwnwriter.xyz";
+  description = "pwnwriter.me";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

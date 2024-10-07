@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://pwnwriter.xyz"
+base_url = "https://pwnwriter.me"
 
 #Title
 title = "pwn()"
