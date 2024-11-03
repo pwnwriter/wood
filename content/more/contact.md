@@ -7,5 +7,5 @@ title = "Contact"
 * Twitter: @pwnwriter
 * Linkedln : @in/pwnwriter
 * Matrix: @pwnwriter:matrix[dot]org
-* Email : hey@pwnwriter[dot]xyz
+* Email : hi@pwnwriter[dot]me
 * Signal : if you have my number

@@ -34,8 +34,8 @@ const themes = {
 }
 
 const defaultThemes = {
-  light: "catppuccin-latte",
-  dark: "catppuccin-mocha"
+  light: "gruvbox-light",
+  dark: "night-spaceduck"
 }
 
 const prefersDark = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);

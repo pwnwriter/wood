@@ -9,7 +9,7 @@
   {% for page in paginator.pages %}
 		<article class="listing">
 			<h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-			<p class="subtitle --center"><code>{{ page.date }}</code></p>
+			<p class="subtitle --center"><code class="dateandtag">{{ page.date }}</code></p>
 		</article>
 	{% endfor %}
 

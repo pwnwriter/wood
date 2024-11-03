@@ -5,12 +5,12 @@
 <h1 class="title-writings">
   {{ section.title }}
 </h1>
-  <p class="subtitle --center"><code><a href="/syndicate/posse/atom.xml">RSS</a></code> <code><a href="/syndicate/">Syndicate</a></code></p>
+  <p class="subtitle --center"><code class="dateandtag"><a href="/syndicate/posse/atom.xml">RSS</a></code> <code class="dateandtag"><a href="/syndicate/">Syndicate</a></code></p>
 
   {% for page in paginator.pages %}
   <article class="syndicate">
   <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-    <p class="subtitle --center"><code>{{ page.date }}</code></p>
+    <p class="subtitle --center"><code class="dateandtag">{{ page.date }}</code></p>
     <div class="syndicate-text">
     {{ page.content | safe }}
     </div>

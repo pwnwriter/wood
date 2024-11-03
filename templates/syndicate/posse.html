@@ -11,10 +11,10 @@
 
   {% if page.date %}
     <div class="syndicate-pagedate">
-      <code>{{ page.date }}</code>
+      <code class="dateandtag">{{ page.date }}</code>
       {% if page.taxonomies.syndicate %}
       {% for tag in page.taxonomies.syndicate %}
-      <code>Genre: {{tag}}</code>
+      <code class="dateandtag">Genre: {{tag}}</code>
       {% endfor %}
       {% endif %}
     </div>

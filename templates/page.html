@@ -4,10 +4,10 @@
 
 {% if page.date %}
   <div class="pagedate">
-    <code>{{ page.date }}</code>
+    <code class="dateandtag">{{ page.date }}</code>
     {% if page.taxonomies.writings %}
     {% for tag in page.taxonomies.writings %}
-    <code>Genre: {{tag}}</code>
+    <code class="dateandtag">Genre: {{tag}}</code>
     {% endfor %}
     {% endif %}
     
