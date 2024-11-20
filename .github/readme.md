@@ -40,4 +40,4 @@ $ zola build # builds the site
 [Nix]: https://github.com/NixOS/nix
 [2022]: https://web.archive.org/web/20221008080446/https://pwnwriter.xyz/
 [2023]: https://web.archive.org/web/20231114032508/https://pwnwriter.xyz/
-[Present]: https://pwnwriter.xyz
+[Present]: https://pwnwriter.me
