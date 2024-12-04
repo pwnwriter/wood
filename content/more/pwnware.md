@@ -5,7 +5,7 @@ title = "Currently Using"
 ## PC
 
 * OS - Nix(OS), Apple silicon
-* Browser - Safari, Firefox
+* Browser - Safari, zen-browser
 * Terminal - Wezterm
 * Text Editor/IDE - Neovim
 * Static Site Generator - Zola and Hugo
@@ -18,21 +18,17 @@ title = "Currently Using"
 ## Cross Platform
 
 * Gemini Client - Lagrange/Amfora
-* Note-taking - Neovim, mdbook
+* Note-taking - Neovim, obsidian
 * Video Player - Mpv
-* Communication - Matrix, Signal, Telegram
+* Communication - Matrix, Signal
 * Password Manager - pass
 * Email - Proton, tutanota, Gmail
 
 ## Smartphone
 
-* ROM(OS) - Pixel Experience
-* Browser - Firefox/Brave
-* App Store - F-droid
-* Email Client - Tutanota
-* Download Manager - Navi/aria2
-* Torrent Client - Libre Torrent
-* Terminal Emulator - Termux, nix-on-droid
+* ROM(OS) - Iphone 15 pro max
+* Browser - Safari
+* Terminal Emulator - ish, nix-on-droid
 
 ## Extras
 
